@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KitaBantu</title>
     <link href="src/output.css" rel="stylesheet" />
   </head>
   <body class="bg-slate-100 font-poppins">
-    <nav class="bg-pink-kb w-full py-2 top-0 sticky">
+    <nav>
       <div class="mx-auto flex max-w-screen-sm">
         <input
           type="text"
@@ -44,10 +45,11 @@
       </div>
       <div class="w-full min-h-screen bg-white rounded-t-[50px] p-8 -mt-10">
         <h2 class="font-bold text-lg text-gray-600">Catagories</h2>
+        <!-- category -->
         <div class="my-5">
-          <ul class="flex gap-4">
+          <ul class="flex gap-4 overflow-auto">
             <li
-              class="flex items-center gap-2 border-[1px] border-gray-200 px-3 py-2 rounded-full bg-pink-kb text-white"
+              class="border-[1px] text-nowrap flex items-center gap-2 border-gray-200 px-3 py-2 rounded-full bg-pink-kb text-white"
             >
               <svg
                 width="16"
@@ -64,24 +66,26 @@
               All
             </li>
             <li
-              class="border-[1px] border-gray-200 px-3 py-2 rounded-full text-gray-400"
+              class="border-[1px] text-nowrap border-gray-200 px-3 py-2 rounded-full text-gray-400"
             >
               Kemanusiaan
             </li>
             <li
-              class="border-[1px] border-gray-200 px-3 py-2 rounded-full text-gray-400"
+              class="border-[1px] text-nowrap border-gray-200 px-3 py-2 rounded-full text-gray-400"
             >
               Zakat
             </li>
             <li
-              class="border-[1px] border-gray-200 px-3 py-2 rounded-full text-gray-400"
+              class="border-[1px] text-nowrap border-gray-200 px-3 py-2 rounded-full text-gray-400"
             >
               Rumah Ibadah
             </li>
           </ul>
         </div>
+        <!-- end category -->
+        <!-- card -->
         <div class="">
-          <div class="flex border-b-[1px] border-gray-200 py-4">
+          <div class="border-b-[1px] flex border-gray-200 py-4 gap-3">
             <div class="w-1/3">
               <img src="./assets/images/Rectangle 2220.png" alt="" />
             </div>
@@ -132,9 +136,9 @@
               </p>
             </div>
           </div>
-          <div class="flex border-b-[1px] border-gray-200 py-4">
+          <div class="flex border-b-[1px] border-gray-200 py-4 gap-3">
             <div class="w-1/3">
-              <img src="./assets/images/Rectangle 2220.png" alt="" />
+              <img src="./assets/images/Rectangle 2225.png" alt="" />
             </div>
             <div class="w-2/3">
               <p class="mb-1 text-xs flex items-center gap-2 text-gray-500">
@@ -183,9 +187,9 @@
               </p>
             </div>
           </div>
-          <div class="flex border-b-[1px] border-gray-200 py-4">
+          <div class="flex border-b-[1px] border-gray-200 py-4 gap-3">
             <div class="w-1/3">
-              <img src="./assets/images/Rectangle 2220.png" alt="" />
+              <img src="./assets/images/Rectangle 2225-1.png" alt="" />
             </div>
             <div class="w-2/3">
               <p class="mb-1 text-xs flex items-center gap-2 text-gray-500">
@@ -234,9 +238,9 @@
               </p>
             </div>
           </div>
-          <div class="flex border-b-[1px] border-gray-200 py-4">
+          <div class="flex border-b-[1px] border-gray-200 py-4 gap-3">
             <div class="w-1/3">
-              <img src="./assets/images/Rectangle 2220.png" alt="" />
+              <img src="./assets/images/Rectangle 2225-2.png" alt="" />
             </div>
             <div class="w-2/3">
               <p class="mb-1 text-xs flex items-center gap-2 text-gray-500">
@@ -285,9 +289,9 @@
               </p>
             </div>
           </div>
-          <div class="flex border-b-[1px] border-gray-200 py-4">
+          <div class="flex border-b-[1px] border-gray-200 py-4 gap-3">
             <div class="w-1/3">
-              <img src="./assets/images/Rectangle 2220.png" alt="" />
+              <img src="./assets/images/Rectangle 2225-3.png" alt="" />
             </div>
             <div class="w-2/3">
               <p class="mb-1 text-xs flex items-center gap-2 text-gray-500">
@@ -336,9 +340,9 @@
               </p>
             </div>
           </div>
-          <div class="flex border-b-[1px] border-gray-200 py-4">
+          <div class="flex border-b-[1px] border-gray-200 py-4 gap-3">
             <div class="w-1/3">
-              <img src="./assets/images/Rectangle 2220.png" alt="" />
+              <img src="./assets/images/Rectangle 2225-4.png" alt="" />
             </div>
             <div class="w-2/3">
               <p class="mb-1 text-xs flex items-center gap-2 text-gray-500">
@@ -389,11 +393,12 @@
           </div>
         </div>
       </div>
+      <!-- End Card -->
       <!-- Home Navigation Bar -->
       <div class="mx-auto max-w-screen-sm bottom-0 sticky p-5">
         <div class="grid grid-cols-3 bg-white rounded-full shadow-xl p-2 gap-2">
           <div
-            class="flex gap-2 py-2 justify-center text-gray-400 items-center text-white bg-pink-kb rounded-full"
+            class="flex gap-2 py-2 justify-center text-gray-400 items-center active:bg-pink-kb active:text-white active:fill-white rounded-full"
           >
             <svg
               width="22"
@@ -404,7 +409,7 @@
             >
               <path
                 d="M8.50909 18V11.6471H12.7636V18H18.0818V9.52941H21.2727L10.6364 0L0 9.52941H3.19091V18H8.50909Z"
-                fill="white"
+                fill="#B8B8B8"
               />
             </svg>
 
