@@ -3,11 +3,26 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom Css Body */
+@layer base {
+  body {
+    @apply bg-slate-100 font-poppins;
+  }
+}
+/* And Custom Css Body */
+
 /* Custom Css Nav */
 @layer components {
   nav {
     @apply bg-pink-kb w-full py-2 top-0 sticky;
   }
 }
-
 /* AndCustom Css Nav */
+
+/* Custom Css Card-Category */
+@layer components {
+  .card-category {
+    @apply bg-[#F7F7F8] p-7 rounded-lg font-semibold text-gray-600 text-xl h-full;
+  }
+}
+/* And Custom Css Card-Category */
